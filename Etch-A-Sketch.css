@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(94, 178, 247);
+}
+
+#container {
+    height: 90vh;
+    width: 80vw;
+    display: grid;
+    border: 3px ridge black;
+    border-radius: 10px;
+    margin: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.33, rgb(173, 14, 14)), color-stop(0.67, rgb(122, 5, 5)));
+    background-image: -moz-linear-gradient(center bottom, rgb(173, 14, 14) 33%, rgb(114, 7, 7) 67% );
+    padding: 90px;
+}
+
+.sqr,
+#grid {
+    background-color: white;
+}
+
+button {
+    position: relative;
+    left: 20px;
+    background-color: white;
+
+}
+
+#resetter{
+    position: relative;
+    top: 87vh;
+    left: 43vw;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    font-family: 'Cabin Sketch', cursive;
+    border-style: groove;
+    border: 3px groove black;
+    background-color: white;
+    
+   
+    
+}
+
+#resetter:hover{
+    animation: transform 1s;
+}
+
+@keyframes transform{
+    0%{
+        transform: translate(0px);
+    }33%{
+        transform: translate(-40px);
+    }
+    66%{
+        transform: translate(40px);
+    }100%{
+        transform: translate(0px);
+    }
+}
