@@ -88,7 +88,6 @@ function resize() {
 }
 
 
-
 function hover() {
     for (i = 0; i < eachGrid.length; i++) {
         eachGrid[i].onmouseover = function () {

@@ -3,9 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(94, 178, 247);
 }
 
+body{
+    background-image: linear-gradient(90deg, #fc8888 0%, #d7e1ec 74%)
+
+}
 #container {
     height: 90vh;
     width: 80vw;
@@ -13,6 +16,7 @@
     border: 3px ridge black;
     border-radius: 10px;
     margin: auto;
+    margin-bottom: 20px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.33, rgb(173, 14, 14)), color-stop(0.67, rgb(122, 5, 5)));
     background-image: -moz-linear-gradient(center bottom, rgb(173, 14, 14) 33%, rgb(114, 7, 7) 67% );
     padding: 90px;
@@ -27,12 +31,12 @@ button {
     position: relative;
     left: 20px;
     background-color: white;
-
+    display: flex;
 }
 
 #resetter{
     position: relative;
-    top: 87vh;
+    top: 100vh;
     left: 43vw;
     font-size: 20px;
     padding: 10px;
@@ -41,9 +45,6 @@ button {
     border-style: groove;
     border: 3px groove black;
     background-color: white;
-    
-   
-    
 }
 
 #resetter:hover{
@@ -61,4 +62,95 @@ button {
     }100%{
         transform: translate(0px);
     }
+}
+
+#reset{
+    position: relative;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100%;
+    font-family: 'Cabin Sketch', cursive;
+    border-style: groove;
+    border: 3px groove black;
+    background-color: white;
+    min-width: 60px;
+    max-width:120px;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: none;
+    text-align: center;
+    padding:0;
+    top: 90vh;
+    width: fit-content;
+    left: 12vw;
+}
+
+#reset:before{
+    content:'';
+    display:inline-block;;
+    vertical-align:middle;
+    padding-top:100%;
+}
+
+
+#color{
+    position: relative;
+    left: 75vw;
+    top: 89vh;
+    border-radius: 100%;
+    font-family: 'Cabin Sketch', cursive;
+    border-style: groove;
+    border: 3px groove black;
+    background-color: white;
+    min-width: 60px;
+    max-width:120px;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: none;
+    text-align: center;
+    padding:0;
+    animation: color 4s infinite;
+}
+
+@keyframes color{
+    0%{
+        background-color: red;
+    }15%{
+        background-color: orange;
+    }30%{
+        background-color: yellow;
+    }45%{
+        background-color: rgb(80, 238, 80);
+    }60%{
+        background-color: cyan;
+    }75%{
+        background-color: rgb(172, 59, 253);
+    }90%{
+        background-color: violet;
+    }100%{
+        background-color: red;
+    }
+}
+
+#color:before{
+    content:'';
+    display:inline-block;;
+    vertical-align:middle;
+    padding-top:100%;
+}
+
+h1{
+    display: inline;
+    position: relative;
+    font-family:'Press Start 2P' ;
+    color: darkgoldenrod;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    top: 6.5em;
+    left: 30vw;
 }
